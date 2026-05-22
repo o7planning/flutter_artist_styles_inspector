@@ -1,0 +1,31 @@
+name: flutter_artist_styles_inspector
+description: A companion visual debugging and code generation toolkit for flutter_artist_styles, providing runtime token inspection and interactive UI code board dialogs.
+version: 2.0.2
+resolution: workspace
+homepage: https://o7planning.github.io
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.6.0
+  tabbed_view: ^3.1.0
+  davi: ^4.0.1
+
+  url_launcher: ^6.3.2
+  markdown_widget: ^2.3.2+8
+  flutter_artist_core: ^0.9.1
+  flutter_left_right_container: ^0.9.3
+  flutter_artist_styles: ^2.1.0
+  flutter_artist_commons_ui: ^0.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
