@@ -29,11 +29,7 @@ class MarkdownDocViewDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size preferContentSize = calculateDialogSize(
-      context,
-      preferredWidth: 600,
-      preferredHeight: 400,
-    );
+    final Size preferContentSize = Size(600, 400);
 
     return FaDialog(
       titleText: "Usage Guide: $title",

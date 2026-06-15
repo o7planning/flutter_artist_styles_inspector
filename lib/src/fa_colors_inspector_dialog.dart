@@ -136,11 +136,7 @@ class _FaColorsInspectorDialogState extends State<FaColorsInspectorDialog> {
   Widget build(BuildContext context) {
     if (_tabController == null) return const SizedBox.shrink();
 
-    final Size preferSize = calculateDialogSize(
-      context,
-      preferredWidth: 1000,
-      preferredHeight: 600,
-    );
+    final Size preferSize = Size(1000, 600);
 
     return FaDialog(
       titleText: "Debug FaColors Inspector",

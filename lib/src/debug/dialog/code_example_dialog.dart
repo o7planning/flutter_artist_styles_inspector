@@ -20,11 +20,7 @@ class CodeExampleDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size preferContentSize = calculateDialogSize(
-      context,
-      preferredWidth: 560,
-      preferredHeight: 340,
-    );
+    final Size preferContentSize = Size(560, 340);
 
     return FaDialog(
       titleText: "Usage: $title",

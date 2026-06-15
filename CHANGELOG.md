@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [2.0.3]
+
+Update Dependencies.
+
 ## 2.0.2
 
 - **Fixed** an internal rendering exception where `ExpansionTile` and `ListTile` header interactive bounds within `FaCodeAccordionBoard` threw assertions due to ancestor `Container` background color decorations.

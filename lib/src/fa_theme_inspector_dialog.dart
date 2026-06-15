@@ -24,11 +24,7 @@ class FaThemeInspectorDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size preferSize = calculateDialogSize(
-      context,
-      preferredWidth: 1000,
-      preferredHeight: 600,
-    );
+    final Size preferSize = Size(1000, 600);
 
     return FaDialog(
       titleText: "Debug Theme Inspector",
