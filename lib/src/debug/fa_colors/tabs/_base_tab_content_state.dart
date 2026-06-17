@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_artist_markdown_widget/flutter_artist_markdown_widget.dart';
 import 'package:flutter_artist_styles/flutter_artist_styles.dart';
 import 'package:flutter_left_right_container/left_right_container.dart';
 import 'package:tabbed_view/tabbed_view.dart';
@@ -6,7 +7,6 @@ import 'package:tabbed_view/tabbed_view.dart';
 import '../../../_endpoint.dart';
 import '../../utils/tab_theme_utils.dart';
 import '../../widget/fa_color_code_table.dart';
-import '../../widget/markdown_doc_view.dart';
 import 'state_tab_content.dart';
 
 abstract class FaColorsBaseTabContent extends StatefulWidget {
@@ -120,7 +120,7 @@ abstract class FaColorsBaseTabContentState<W extends FaColorsBaseTabContent>
         view: ValueListenableBuilder(
           valueListenable: langCodeNotifier,
           builder: (_, langCode, _) {
-            return MarkdownDocView(markdownContentUrl: _getTabUsageUrl());
+            return FaMarkdownWidget.url(url: _getTabUsageUrl());
           },
         ),
         closable: false,
@@ -151,10 +151,8 @@ abstract class FaColorsBaseTabContentState<W extends FaColorsBaseTabContent>
         view: ValueListenableBuilder(
           valueListenable: langCodeNotifier,
           builder: (_, langCode, _) {
-            return MarkdownDocView(
-              markdownContentUrl: _getSelectedTokenUsageUrl(
-                _selectedTokenEntry?.key,
-              ),
+            return FaMarkdownWidget.url(
+              url: _getSelectedTokenUsageUrl(_selectedTokenEntry?.key),
             );
           },
         ),

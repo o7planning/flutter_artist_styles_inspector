@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_artist_commons_ui/flutter_artist_commons_ui.dart';
-
-import '../widget/markdown_doc_view.dart';
+import 'package:flutter_artist_markdown_widget/flutter_artist_markdown_widget.dart';
 
 class MarkdownDocViewDialog extends StatelessWidget {
   final String title;
@@ -42,6 +41,6 @@ class MarkdownDocViewDialog extends StatelessWidget {
   }
 
   Widget _buildContent(BuildContext context) {
-    return MarkdownDocView(markdownContentUrl: markdownContentUrl);
+    return FaMarkdownWidget.url(url: markdownContentUrl);
   }
 }

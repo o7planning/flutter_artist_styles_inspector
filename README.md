@@ -34,9 +34,8 @@ Add this development dependency configuration to your target project's `pubspec.
 dependencies:
   flutter:
     sdk: flutter
-  flutter_artist_styles: ^1.0.0
-  flutter_artist_styles_inspector: ^1.0.0
-
+  flutter_artist_styles: ^2.1.0
+  flutter_artist_styles_inspector: ^2.0.4
 ```
 
 ---
