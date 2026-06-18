@@ -1,5 +1,10 @@
 # CHANGELOG
 
+
+## [2.0.5]
+
+Update Dependencies.
+
 ## [2.0.4]
 
 Use FaMarkdownWidget to show the document.
