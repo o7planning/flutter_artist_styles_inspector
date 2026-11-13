@@ -28,6 +28,7 @@ DaviThemeData getDemoDaviTableThemeData(
       ),
     ),
     row: RowThemeData(
+      estimatedHeight: 40,
       dividerThickness: 0.4,
       dividerColor: context.faColors.divider.subtle,
       fillHeight: true,
@@ -44,7 +45,6 @@ DaviThemeData getDemoDaviTableThemeData(
     ),
     cell: CellThemeData(
       padding: const EdgeInsets.all(5),
-      contentHeight: 32,
       textStyle: TextStyle(color: context.faColors.ink.primary, fontSize: 13),
     ),
     scrollbar: TableScrollbarThemeData(
